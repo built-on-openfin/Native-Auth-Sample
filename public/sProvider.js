@@ -11,7 +11,6 @@ async function getSearchResults({ query }) {
         throw new Error('uh oh something went wrong');
     }
     const json = await res.json();
-
     /* Return initial search results.
 
        All results must have the `name` and `description`
@@ -35,8 +34,8 @@ function openWindowForSearchResult(result) {
 //     if (dispatchedAction !== openWindowAction) return;
  
  fin.desktop.System.launchExternalProcess({
-    path: "C:\\Users\\puvne\\Openfin\\TestJSApp\\public\\testJava.bat",
-    arguments: "--version",
+    path: "C:\\Openfin\\TestJSApp\\AuthSample\\public\\testJava.bat",
+    arguments: "Test Token",
     listener: function (result) {
         console.log('the exit code', result.exitCode);
     }
@@ -61,7 +60,7 @@ await searchTopic.register(provider);
 
 export async function launchOpenFinWorkspace(){
     return await fin.System.openUrlWithBrowser('fins://system-apps/workspace');
-  }
+}
 
 export function setHomeVisibility(showUI, showUIOnLaunch) {
   if (showUI === false) {
