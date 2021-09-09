@@ -2,6 +2,6 @@
 ECHO The %~nx0 script args are...
 for %%I IN (%*) DO ECHO %%I
 
-cd C:\Openfin\java-app-launcher
+cd C:\Openfin\TestJSApp\AuthSample
 java -jar testJava.jar %*
 pause

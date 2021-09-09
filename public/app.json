@@ -7,6 +7,8 @@
         "uuid": "AuthSample",
         "saveWindowState": false,
         "autoShow": true,
+        "defaultWidth": 420,
+        "defaultHeight": 170,
         "permissions": {
             "System": {
                 "launchExternalProcess": true,
