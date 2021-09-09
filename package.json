@@ -1,0 +1,21 @@
+{
+  "name": "testjsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openfin/search-api": "^1.5.9",
+    "express": "^4.17.1",
+    "hadouken-js-adapter": "^17.54.32",
+    "live-server": "^1.2.1",
+    "openfin-notifications": "^1.8.0",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,20 @@
+
+{
+    "devtools_port": 9090,
+    "startup_app": {
+        "name": "AuthSample",
+        "url": "http://localhost:3000/",
+        "uuid": "AuthSample",
+        "saveWindowState": false,
+        "autoShow": true,
+        "permissions": {
+            "System": {
+                "launchExternalProcess": true,
+                "terminateExternalProcess": true
+            }
+        }
+    },
+    "runtime": {
+        "version": "stable"
+    }
+}

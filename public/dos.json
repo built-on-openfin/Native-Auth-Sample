@@ -1,0 +1,21 @@
+{
+    "applicationSettings": {
+      "http://localhost:3000/app.json": {
+        "permissions": {
+          "System": {
+            "launchExternalProcess": true,
+            "terminateExternalProcess": true
+          }
+        }
+      },
+      "default": {
+        "permissions": {
+          "System": {
+            "launchExternalProcess": true,
+            "terminateExternalProcess": true
+          }
+        }
+      }
+    }
+  }
+  

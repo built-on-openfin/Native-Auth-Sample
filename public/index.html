@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="module" src="./sProvider.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+       <label for="fname">User Name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Password:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <button type="button" id="getToken">Click Me</button>
+      <script type="module">
+        import {getToken} from './sProvider.js'
+        document.querySelector('#getToken').addEventListener('click', getToken)
+      </script>
+    </div>
+  </div>
+</body>
+</html>
