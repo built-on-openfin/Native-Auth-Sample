@@ -6,17 +6,20 @@ const APP_ID = "openfin-browser";
 
 // Example search handler that returns results from a backend query.
 async function getSearchResults({ query }) {
-    const res = await fetch('/search?q=' + encodeURIComponent(query));
-    if (!res.ok) {
-        throw new Error('uh oh something went wrong');
-    }
-    const json = await res.json();
+    // const res = await fetch('/search?q=' + encodeURIComponent(query));
+    // if (!res.ok) {
+    //     throw new Error('uh oh something went wrong');
+    // }
+    const json =[{
+      nameAttribute : 'test',
+      descriptionAttribute : 'description'
+    }]
     /* Return initial search results.
-
        All results must have the `name` and `description`
-       field at the very least for rendering purposes. */
+       field at the very least for rendering purposes. 
+       */
     return json.map((myResult) => ({
-        name: myResult.nameAttribute,
+        title: myResult.nameAttribute,
         shortDescription: myResult.shortDescriptionAttribute,
         description: myResult.descriptionAttribute,
         actions: [openWindowAction], // Dispatchable actions for this search result.
