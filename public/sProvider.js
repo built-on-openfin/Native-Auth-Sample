@@ -54,7 +54,7 @@ const searchTopic = await fin.Search.subscribe({ uuid: 'openfin-browser' });
 
 const provider = {
     name: 'test',
-    onSearch: openWindowForSearchResult,
+    onSearch: getSearchResults,
     onResultDispatch: openWindowForSearchResult
 };
 
